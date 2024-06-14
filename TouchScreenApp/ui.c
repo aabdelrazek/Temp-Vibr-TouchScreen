@@ -13,12 +13,12 @@
 void ui_WelcomeScreen_screen_init(void);
 lv_obj_t * ui_WelcomeScreen;
 lv_obj_t * ui_Label10;
-void ui_event_freeStyle(lv_event_t * e);
-lv_obj_t * ui_freeStyle;
-lv_obj_t * ui_Label2;
 void ui_event_DemoMode(lv_event_t * e);
 lv_obj_t * ui_DemoMode;
 lv_obj_t * ui_Label3;
+void ui_event_ImgButton4(lv_event_t * e);
+lv_obj_t * ui_ImgButton4;
+lv_obj_t * ui_Image2;
 
 
 // SCREEN: ui_DemoScreen
@@ -27,17 +27,17 @@ lv_obj_t * ui_DemoScreen;
 void ui_event_Button3(lv_event_t * e);
 lv_obj_t * ui_Button3;
 lv_obj_t * ui_Label4;
-lv_obj_t * ui_Label6;
 lv_obj_t * ui_Container1;
 void ui_event_targetTslider(lv_event_t * e);
 lv_obj_t * ui_targetTslider;
 lv_obj_t * ui_Label7;
 lv_obj_t * ui_targetV;
-lv_obj_t * ui_Label9;
-void ui_event_startstop(lv_event_t * e);
-lv_obj_t * ui_startstop;
 lv_obj_t * ui_Label8;
 lv_obj_t * ui_Label17;
+void ui_event_startstop(lv_event_t * e);
+lv_obj_t * ui_startstop;
+lv_obj_t * ui_LabelStart;
+lv_obj_t * ui_LabelStop;
 lv_obj_t * ui_Container2;
 lv_obj_t * ui_Label12;
 lv_obj_t * ui_Label13;
@@ -49,6 +49,11 @@ lv_obj_t * ui_vibration;
 lv_obj_t * ui_heatingState;
 lv_obj_t * ui_coolingState;
 lv_obj_t * ui_temperature;
+lv_obj_t * ui_Image4;
+lv_obj_t * ui_Label6;
+lv_obj_t * ui_Label9;
+void ui_event_enableTDemo(lv_event_t * e);
+lv_obj_t * ui_enableTDemo;
 
 
 // SCREEN: ui_FreeStyleScreen
@@ -57,17 +62,78 @@ lv_obj_t * ui_FreeStyleScreen;
 void ui_event_Button1(lv_event_t * e);
 lv_obj_t * ui_Button1;
 lv_obj_t * ui_Label5;
+lv_obj_t * ui_Image3;
+lv_obj_t * ui_Label27;
+lv_obj_t * ui_Container6;
+lv_obj_t * ui_Label32;
+lv_obj_t * ui_Label18;
+lv_obj_t * ui_Label28;
+lv_obj_t * ui_Label29;
+lv_obj_t * ui_Label30;
+lv_obj_t * ui_demoState2;
+lv_obj_t * ui_vibration2;
+lv_obj_t * ui_heatingState3;
+lv_obj_t * ui_coolingState3;
+lv_obj_t * ui_temperature2;
+lv_obj_t * ui_Panel1;
+lv_obj_t * ui_TabView1;
+lv_obj_t * ui_Vlevels;
+void ui_event_saveVLevels(lv_event_t * e);
+lv_obj_t * ui_saveVLevels;
+lv_obj_t * ui_Label26;
+void ui_event_loadVLevels(lv_event_t * e);
+lv_obj_t * ui_loadVLevels;
 lv_obj_t * ui_Label1;
+lv_obj_t * ui_Container3;
+lv_obj_t * ui_Label22;
+void ui_event_viblow(lv_event_t * e);
+lv_obj_t * ui_viblow;
+void ui_event_vibmid(lv_event_t * e);
+lv_obj_t * ui_vibmid;
+void ui_event_vibhigh(lv_event_t * e);
+lv_obj_t * ui_vibhigh;
+void ui_event_vibmax(lv_event_t * e);
+lv_obj_t * ui_vibmax;
+lv_obj_t * ui_Label23;
+lv_obj_t * ui_Label24;
+lv_obj_t * ui_Label25;
+lv_obj_t * ui_Lblviblow;
+lv_obj_t * ui_Lblvibmid;
+lv_obj_t * ui_Lblvibhigh;
+lv_obj_t * ui_Lblvibmax;
+lv_obj_t * ui_Label21;
+lv_obj_t * ui_hintv;
+lv_obj_t * ui_Flevel;
+lv_obj_t * ui_Container5;
+void ui_event_vibmax1(lv_event_t * e);
+lv_obj_t * ui_vibmax1;
+lv_obj_t * ui_Lblvibmax1;
+void ui_event_saveFanLevel(lv_event_t * e);
+lv_obj_t * ui_saveFanLevel;
+lv_obj_t * ui_Label33;
+void ui_event_loadFanLevel(lv_event_t * e);
+lv_obj_t * ui_loadFanLevel;
+lv_obj_t * ui_Label31;
+lv_obj_t * ui_Label34;
+lv_obj_t * ui_hintfan;
+lv_obj_t * ui_Test;
 lv_obj_t * ui_Container4;
 lv_obj_t * ui_Label11;
-lv_obj_t * ui_Label18;
 lv_obj_t * ui_Label20;
-void ui_event_heatingState2(lv_event_t * e);
-lv_obj_t * ui_heatingState2;
-lv_obj_t * ui_temperature2;
+void ui_event_heatingSwitch(lv_event_t * e);
+lv_obj_t * ui_heatingSwitch;
+void ui_event_coolingSwitch(lv_event_t * e);
+lv_obj_t * ui_coolingSwitch;
 void ui_event_currentSetV(lv_event_t * e);
 lv_obj_t * ui_currentSetV;
+lv_obj_t * ui_Label2;
+lv_obj_t * ui_Label19;
+lv_obj_t * ui_hinttest;
+void ui_event_reset(lv_event_t * e);
+lv_obj_t * ui_reset;
+lv_obj_t * ui_Label35;
 lv_obj_t * ui____initial_actions0;
+const lv_img_dsc_t * ui_imgset_setting[1] = {&ui_img_setting2_png};
 
 ///////////////////// TEST LVGL SETTINGS ////////////////////
 #if LV_COLOR_DEPTH != 16
@@ -80,15 +146,6 @@ lv_obj_t * ui____initial_actions0;
 ///////////////////// ANIMATIONS ////////////////////
 
 ///////////////////// FUNCTIONS ////////////////////
-void ui_event_freeStyle(lv_event_t * e)
-{
-    lv_event_code_t event_code = lv_event_get_code(e);
-    lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
-        _ui_screen_change(&ui_FreeStyleScreen, LV_SCR_LOAD_ANIM_MOVE_RIGHT, 500, 0, &ui_FreeStyleScreen_screen_init);
-        _ui_screen_delete(&ui_WelcomeScreen);
-    }
-}
 void ui_event_DemoMode(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
@@ -96,6 +153,15 @@ void ui_event_DemoMode(lv_event_t * e)
     if(event_code == LV_EVENT_CLICKED) {
         _ui_screen_change(&ui_DemoScreen, LV_SCR_LOAD_ANIM_MOVE_RIGHT, 500, 0, &ui_DemoScreen_screen_init);
         _ui_screen_delete(&ui_WelcomeScreen);
+    }
+}
+void ui_event_ImgButton4(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        _ui_screen_delete(&ui_WelcomeScreen);
+        _ui_screen_change(&ui_FreeStyleScreen, LV_SCR_LOAD_ANIM_MOVE_RIGHT, 500, 0, &ui_FreeStyleScreen_screen_init);
     }
 }
 void ui_event_Button3(lv_event_t * e)
@@ -121,6 +187,18 @@ void ui_event_startstop(lv_event_t * e)
     lv_obj_t * target = lv_event_get_target(e);
     if(event_code == LV_EVENT_CLICKED) {
         startStopButtonClicked(e);
+        _ui_flag_modify(ui_LabelStart, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
+        _ui_flag_modify(ui_LabelStop, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
+    }
+}
+void ui_event_enableTDemo(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        _ui_flag_modify(ui_targetTslider, LV_OBJ_FLAG_CLICKABLE, _UI_MODIFY_FLAG_TOGGLE);
+        _ui_label_set_property(ui_Label17, _UI_LABEL_PROPERTY_TEXT, "-");
+        _ui_slider_set_property(ui_targetTslider, _UI_SLIDER_PROPERTY_VALUE_WITH_ANIM, 0);
     }
 }
 void ui_event_Button1(lv_event_t * e)
@@ -132,12 +210,92 @@ void ui_event_Button1(lv_event_t * e)
         _ui_screen_change(&ui_WelcomeScreen, LV_SCR_LOAD_ANIM_MOVE_LEFT, 500, 0, &ui_WelcomeScreen_screen_init);
     }
 }
-void ui_event_heatingState2(lv_event_t * e)
+void ui_event_saveVLevels(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
     if(event_code == LV_EVENT_CLICKED) {
-        turnOnHeatingElement(e);
+        saveV_Levels(e);
+    }
+}
+void ui_event_loadVLevels(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        loadV_Levels(e);
+    }
+}
+void ui_event_viblow(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_VALUE_CHANGED) {
+        _ui_slider_set_text_value(ui_Lblviblow, target, "", "");
+    }
+}
+void ui_event_vibmid(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_VALUE_CHANGED) {
+        _ui_slider_set_text_value(ui_Lblvibmid, target, "", "");
+    }
+}
+void ui_event_vibhigh(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_VALUE_CHANGED) {
+        _ui_slider_set_text_value(ui_Lblvibhigh, target, "", "");
+    }
+}
+void ui_event_vibmax(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_VALUE_CHANGED) {
+        _ui_slider_set_text_value(ui_Lblvibmax, target, "", "");
+    }
+}
+void ui_event_vibmax1(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_VALUE_CHANGED) {
+        _ui_slider_set_text_value(ui_Lblvibmax1, target, "", "");
+    }
+}
+void ui_event_saveFanLevel(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        saveFanMaxLevel(e);
+    }
+}
+void ui_event_loadFanLevel(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        loadFanMaxLevel(e);
+    }
+}
+void ui_event_heatingSwitch(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        turnOnOffHeatingElement(e);
+    }
+}
+void ui_event_coolingSwitch(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        turnOnOffCoolingFan(e);
     }
 }
 void ui_event_currentSetV(lv_event_t * e)
@@ -146,6 +304,14 @@ void ui_event_currentSetV(lv_event_t * e)
     lv_obj_t * target = lv_event_get_target(e);
     if(event_code == LV_EVENT_VALUE_CHANGED) {
         setVibrationLevel(e);
+    }
+}
+void ui_event_reset(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        reset_btn_clicked(e);
     }
 }
 

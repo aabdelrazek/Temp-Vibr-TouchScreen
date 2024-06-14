@@ -20,54 +20,25 @@ void ui_WelcomeScreen_screen_init(void)
     ui_Label10 = lv_label_create(ui_WelcomeScreen);
     lv_obj_set_width(ui_Label10, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label10, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_Label10, -20);
-    lv_obj_set_y(ui_Label10, -170);
+    lv_obj_set_x(ui_Label10, -2);
+    lv_obj_set_y(ui_Label10, -88);
     lv_obj_set_align(ui_Label10, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label10, "Welcome to T & V Demo");
-    lv_obj_set_style_text_color(ui_Label10, lv_color_hex(0x410E0E), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_label_set_text(ui_Label10, "Welcome to Temperature & Vibration \n                   Monitoring Demo");
+    lv_obj_set_style_text_color(ui_Label10, lv_color_hex(0xD00101), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_Label10, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui_Label10, &lv_font_montserrat_36, LV_PART_MAIN | LV_STATE_DEFAULT);
-
-    ui_freeStyle = lv_btn_create(ui_WelcomeScreen);
-    lv_obj_set_width(ui_freeStyle, 352);
-    lv_obj_set_height(ui_freeStyle, 100);
-    lv_obj_set_x(ui_freeStyle, -203);
-    lv_obj_set_y(ui_freeStyle, 10);
-    lv_obj_set_align(ui_freeStyle, LV_ALIGN_CENTER);
-    lv_obj_add_flag(ui_freeStyle, LV_OBJ_FLAG_SCROLL_ON_FOCUS);     /// Flags
-    lv_obj_clear_flag(ui_freeStyle, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
-    lv_obj_set_style_radius(ui_freeStyle, 30, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_color(ui_freeStyle, lv_color_hex(0x0ECB1B), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_opa(ui_freeStyle, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_shadow_color(ui_freeStyle, lv_color_hex(0x023A09), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_shadow_opa(ui_freeStyle, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_shadow_width(ui_freeStyle, 100, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_shadow_spread(ui_freeStyle, 10, LV_PART_MAIN | LV_STATE_DEFAULT);
-
-    ui_Label2 = lv_label_create(ui_freeStyle);
-    lv_obj_set_width(ui_Label2, LV_SIZE_CONTENT);   /// 1
-    lv_obj_set_height(ui_Label2, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_Label2, 3);
-    lv_obj_set_y(ui_Label2, -3);
-    lv_obj_set_align(ui_Label2, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label2, "Free Style Mode");
-    lv_obj_set_style_text_color(ui_Label2, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_opa(ui_Label2, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui_Label2, &lv_font_montserrat_28, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui_Label10, &lv_font_montserrat_40, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_DemoMode = lv_btn_create(ui_WelcomeScreen);
-    lv_obj_set_width(ui_DemoMode, 356);
+    lv_obj_set_width(ui_DemoMode, 392);
     lv_obj_set_height(ui_DemoMode, 100);
-    lv_obj_set_x(ui_DemoMode, 198);
-    lv_obj_set_y(ui_DemoMode, 11);
+    lv_obj_set_x(ui_DemoMode, -11);
+    lv_obj_set_y(ui_DemoMode, 60);
     lv_obj_set_align(ui_DemoMode, LV_ALIGN_CENTER);
     lv_obj_add_flag(ui_DemoMode, LV_OBJ_FLAG_SCROLL_ON_FOCUS);     /// Flags
     lv_obj_clear_flag(ui_DemoMode, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
     lv_obj_set_style_radius(ui_DemoMode, 30, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_color(ui_DemoMode, lv_color_hex(0x0ECB1B), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(ui_DemoMode, lv_color_hex(0xD00101), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_DemoMode, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_shadow_color(ui_DemoMode, lv_color_hex(0x023A09), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_shadow_opa(ui_DemoMode, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_shadow_width(ui_DemoMode, 100, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_shadow_spread(ui_DemoMode, 10, LV_PART_MAIN | LV_STATE_DEFAULT);
 
@@ -75,12 +46,34 @@ void ui_WelcomeScreen_screen_init(void)
     lv_obj_set_width(ui_Label3, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label3, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_align(ui_Label3, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label3, "Autonomous Mode");
-    lv_obj_set_style_text_color(ui_Label3, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_label_set_text(ui_Label3, "Click Here to Start");
+    lv_obj_set_style_text_color(ui_Label3, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_Label3, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui_Label3, &lv_font_montserrat_28, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui_Label3, &lv_font_montserrat_32, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_event_cb(ui_freeStyle, ui_event_freeStyle, LV_EVENT_ALL, NULL);
+    ui_ImgButton4 = lv_imgbtn_create(ui_WelcomeScreen);
+    lv_imgbtn_set_src(ui_ImgButton4, LV_IMGBTN_STATE_RELEASED, NULL, &ui_img_setting2_png, NULL);
+    lv_imgbtn_set_src(ui_ImgButton4, LV_IMGBTN_STATE_PRESSED, NULL, &ui_img_setting2_png, NULL);
+    lv_obj_set_width(ui_ImgButton4, 67);
+    lv_obj_set_height(ui_ImgButton4, 67);
+    lv_obj_set_x(ui_ImgButton4, 364);
+    lv_obj_set_y(ui_ImgButton4, -205);
+    lv_obj_set_align(ui_ImgButton4, LV_ALIGN_CENTER);
+    lv_obj_set_flex_flow(ui_ImgButton4, LV_FLEX_FLOW_ROW);
+    lv_obj_set_flex_align(ui_ImgButton4, LV_FLEX_ALIGN_START, LV_FLEX_ALIGN_START, LV_FLEX_ALIGN_START);
+
+    ui_Image2 = lv_img_create(ui_WelcomeScreen);
+    lv_img_set_src(ui_Image2, &ui_img_1984690215);
+    lv_obj_set_width(ui_Image2, LV_SIZE_CONTENT);   /// 250
+    lv_obj_set_height(ui_Image2, LV_SIZE_CONTENT);    /// 167
+    lv_obj_set_x(ui_Image2, -333);
+    lv_obj_set_y(ui_Image2, 199);
+    lv_obj_set_align(ui_Image2, LV_ALIGN_CENTER);
+    lv_obj_add_flag(ui_Image2, LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
+    lv_obj_clear_flag(ui_Image2, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+    lv_img_set_zoom(ui_Image2, 128);
+
     lv_obj_add_event_cb(ui_DemoMode, ui_event_DemoMode, LV_EVENT_ALL, NULL);
+    lv_obj_add_event_cb(ui_ImgButton4, ui_event_ImgButton4, LV_EVENT_ALL, NULL);
 
 }
